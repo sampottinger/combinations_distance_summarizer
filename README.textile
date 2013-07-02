@@ -18,14 +18,18 @@ python summarizer.py csv_words_to_summarize distances_csv_path [pairs]
 
 * *words_to_summarize_path* File name or path to TXT file containing the
 list of words to summarize. Use one word per line. Blank lines are ignored.
+Words are case sensitive and must match the distances CSV exactly.
 
 * *distances_csv_path* File name or path to CSV file containing the distances
 matrix to use to calculate distances between words.
 
 * *[pairs]* Optional argument. If 'y', will output the distances between all
-pairs.
+pairs in addition to the final average.
 
 Ex: python summarizer.py test_word_list.txt HowellNounDistances.csv y
+
+See example_many_input_files.bash for how to run many input files and summarize
+the results.
 
 h2. Development Environment Setup
 

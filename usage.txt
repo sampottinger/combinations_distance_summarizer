@@ -1,7 +1,8 @@
 usage: python summarizer.py csv_words_to_summarize distances_csv_path [pairs]
 
-  csv_words_to_summarize: File name or path to TXT file containing the
-    list of words to summarize. Use one word per line. Blank lines are ignored.
+  csv_words_to_summarize: File name or path to TXT file containing the list of
+    words to summarize. Use one word per line. Blank lines are ignored. Words
+    are case sensitive and must match the distances CSV exactly.
 
   distances_csv_path: File name or path to CSV file containing the distances
     matrix to use to calculate distances between words.
