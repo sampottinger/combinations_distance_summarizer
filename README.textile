@@ -12,22 +12,6 @@ This is a utility program to find the combination of words in a given list, the
 distances between those combination pairs, and the average of those distances.
 The final return value is that final average of distances.
 
-h2. Development Environment Setup
-
-The only requirement for running the utility is Python 2.7
-(http://www.python.org/).
-
-
-h2. Development Standards
-
-All Python documentation is written in epydoc (http://epydoc.sourceforge.net/).
-
-
-h2. Testing
-
-The utility is currently small enough that automated testing is not provided.
-
-
 h2. Usage
 
 python summarizer.py csv_words_to_summarize distances_csv_path [pairs]
@@ -42,3 +26,18 @@ matrix to use to calculate distances between words.
 pairs.
 
 Ex: python summarizer.py test_word_list.txt HowellNounDistances.csv y
+
+h2. Development Environment Setup
+
+The only requirement for running the utility is Python 2.7
+(http://www.python.org/).
+
+
+h2. Development Standards
+
+All Python documentation is written in epydoc (http://epydoc.sourceforge.net/).
+
+
+h2. Testing
+
+The utility is currently small enough that automated testing is not provided.
