@@ -6,11 +6,11 @@ the combination of words and return the average distance.
 LJSimpleRegisterLookup is released under the MIT License.
 
 
-h2. Overview for the project (tl;dr)
+h2. Purpose
 
 This is a utility program to find the combination of words in a given list, the
 distances between those combination pairs, and the average of those distances.
-The final return value is that average.
+The final return value is that final average of distances.
 
 h2. Development Environment Setup
 
