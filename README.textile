@@ -1,7 +1,8 @@
 h1. combinations_distance_summarizer
 
 combinations_distance_summarizer provides a tiny command-line-based utility to
-find the combinations of words and return the average distance.
+find the combinations of words and return the average distance between those
+words.
 
 combinations_distance_summarizer is released under the MIT License.
 
