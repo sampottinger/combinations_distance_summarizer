@@ -1,0 +1,42 @@
+h1. combinations_distance_summarizer
+
+combinations_distance_summarizer provides a command-line-based utility to find
+the combination of words and return the average distance.
+
+LJSimpleRegisterLookup is released under the MIT License.
+
+
+h2. Overview for the project (tl;dr)
+
+This is a utility program to find the combination of words in a given list, the
+distances between those combination pairs, and the average of those distances.
+The final return value is that average.
+
+h2. Development Environment Setup
+
+The only requirement for running the utility is Python 2.7
+(http://www.python.org/).
+
+
+h2. Development Standards
+
+All Python documentation is written in epydoc (http://epydoc.sourceforge.net/).
+
+
+h2. Testing
+
+The utility is currently small enough that automated testing is not provided.
+
+
+h2. Usage
+
+python summarizer.py csv_words_to_summarize distances_csv_path [pairs]
+
+  csv_words_to_summarize: list of words seperated by commas that should be
+    summarized. Example: alligator,animal,ankle,ant,apple,applesauce
+
+  distances_csv_path: File name or path to CSV file containing the distances
+    matrix to use to calculate distances between words.
+
+  [pairs]: Optional argument. If 'y', will output the distances between all
+    pairs.
