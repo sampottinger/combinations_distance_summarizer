@@ -1,7 +1,7 @@
 usage: python summarizer.py csv_words_to_summarize distances_csv_path [pairs]
 
-  csv_words_to_summarize: list of words seperated by commas that should be
-    summarized. Example: alligator,animal,ankle,ant,apple,applesauce
+  csv_words_to_summarize: File name or path to TXT file containing the
+    list of words to summarize. Use one word per line. Blank lines are ignored.
 
   distances_csv_path: File name or path to CSV file containing the distances
     matrix to use to calculate distances between words.

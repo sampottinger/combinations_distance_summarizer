@@ -86,6 +86,12 @@ def load_distances_csv(loc):
     return WordDistanceFinder(values)
 
 
+def load_words_to_summarize(loc):
+    with open(loc, 'rb') as f:
+        words = f.read().split('\n')
+    return filter(lambda x: x != '', words)
+
+
 def run_cli():
     """Run the command line interface driver for this program.
 
@@ -101,7 +107,7 @@ def run_cli():
         return None
 
     # Parse command line arguments and load distances
-    words = sys.argv[1].lower().split(',')
+    words_loc = sys.argv[1]
     distances_csv_loc = sys.argv[2]
 
     if len(sys.argv) == 4:
@@ -109,6 +115,7 @@ def run_cli():
     else:
         display_pairs = False
 
+    words = load_words_to_summarize(words_loc)
     distance_finder = load_distances_csv(distances_csv_loc)
 
     # Find distances for all combinations
