@@ -38,11 +38,11 @@ h2. Usage (many_input_files.bash)
 
 @bash many_input_files.bash input_file_list dist_csv out_file@
 
-Runs summarizer.py on many lists of words to summarize.
+Runs summarizer.py on many word samples.
 
 Simple bash snippet that demonstrates how to run summarizer.py with many
 input files (many files each with a list of words to summarize) while using
-the same distance matrix CSV. See README.texttile first.
+the same distance matrix CSV.
 
 * *input_file_list* The TXT file with one file per line that should be used as
 the list of words to summarize for summarizer.py. Should be file name or path.
