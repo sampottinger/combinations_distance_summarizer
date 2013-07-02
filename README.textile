@@ -40,3 +40,5 @@ matrix to use to calculate distances between words.
 
 * *[pairs]* Optional argument. If 'y', will output the distances between all
 pairs.
+
+Ex: python summarizer.py alligator,animal,ankle HowellNounDistances.csv y
