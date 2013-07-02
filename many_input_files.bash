@@ -20,6 +20,8 @@
 # Author: A. Samuel Pottinger (2013)
 # License: MIT
 #
+echo 'Results:' > $3
+echo '' >> $3
 
 while read target; do
   echo $target >> $3;

@@ -28,7 +28,8 @@ matrix to use to calculate distances between words.
 * *[pairs]* Optional argument. If 'y', will output the distances between all
 pairs in addition to the final average.
 
-Ex: python summarizer.py test_word_list.txt HowellNounDistances.csv y
+Example:
+@python summarizer.py ./example/word_list_1.txt ./example/HowellNounDistances.csv y@
 
 h2. Usage (many_input_files.bash)
 
@@ -47,8 +48,8 @@ the list of words to summarize for summarizer.py. Should be file name or path.
 
 * *out_file* The file to which the results (averages) should be written.
 
-Example: bash many_input_files.bash word_list_files.txt HowellNounDistances.csv
-combined_results.txt
+Example:
+@bash many_input_files.bash ./example/word_lists.txt ./example/HowellNounDistances.csv ./example/results.txt@
 
 h2. Development Environment Setup
 

@@ -1,0 +1,2 @@
+./example/word_list_1.txt
+./example/word_list_2.txt

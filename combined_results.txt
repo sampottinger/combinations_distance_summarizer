@@ -1,6 +1,0 @@
-test_word_list.txt
-0.626866666667
-
-test_word_list_2.txt
-0.718607142857
-

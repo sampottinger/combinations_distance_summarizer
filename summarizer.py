@@ -4,7 +4,8 @@ Utility program to find the combinations of words in a given list, the distances
 between those combination pairs, and the average of those distances. The final
 return value is that average.
 
-@author: Ariel Aguilar, Sam Pottinger
+@author: Ariel Aguilar, 2013
+@author: Sam Pottinger, 2013
 @license: MIT
 """
 
