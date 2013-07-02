@@ -1,14 +1,14 @@
 h1. combinations_distance_summarizer
 
 combinations_distance_summarizer provides a command-line-based utility to find
-the combination of words and return the average distance.
+the combinations of words and return the average distance.
 
 LJSimpleRegisterLookup is released under the MIT License.
 
 
 h2. Purpose
 
-This is a utility program to find the combination of words in a given list, the
+This is a utility program to find the combinations of words in a given list, the
 distances between those combination pairs, and the average of those distances.
 The final return value is that final average of distances.
 
@@ -16,9 +16,9 @@ h2. Usage (summarizer.py)
 
 @python summarizer.py csv_words_to_summarize distances_csv_path [pairs]@
 
-Utility to find the combination of words and return the average distance.
+Utility to find the combinations of words and return the average distance.
 
-This is a utility program to find the combination of words in a single list,
+This is a utility program to find the combinations of words in a single list,
 the distances between those combination pairs, and the average of those
 distances. The final return value is that final average of distances.
 

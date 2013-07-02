@@ -1,6 +1,6 @@
-"""Utility to find the combination of words and return the average distance.
+"""Utility to find the combinations of words and return the average distance.
 
-Utility program to find the combination of words in a given list, the distances
+Utility program to find the combinations of words in a given list, the distances
 between those combination pairs, and the average of those distances. The final
 return value is that average.
 
