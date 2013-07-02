@@ -14,6 +14,10 @@ The final return value is that final average of distances.
 
 h2. Usage (summarizer.py)
 
+This is a utility program to find the combination of words in a single list, the
+distances between those combination pairs, and the average of those distances.
+The final return value is that final average of distances.
+
 python summarizer.py csv_words_to_summarize distances_csv_path [pairs]
 
 * *words_to_summarize_path* File name or path to TXT file containing the
@@ -29,6 +33,8 @@ pairs in addition to the final average.
 Ex: python summarizer.py test_word_list.txt HowellNounDistances.csv y
 
 h2. Usage (many_input_files.bash)
+
+Runs summarizer.py on many lists of words to summarize.
 
 bash many_input_files.bash input_file_list dist_csv out_file
 
