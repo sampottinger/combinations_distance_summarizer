@@ -14,11 +14,13 @@ The final return value is that final average of distances.
 
 h2. Usage (summarizer.py)
 
-This is a utility program to find the combination of words in a single list, the
-distances between those combination pairs, and the average of those distances.
-The final return value is that final average of distances.
+@python summarizer.py csv_words_to_summarize distances_csv_path [pairs]@
 
-python summarizer.py csv_words_to_summarize distances_csv_path [pairs]
+Utility to find the combination of words and return the average distance.
+
+This is a utility program to find the combination of words in a single list,
+the distances between those combination pairs, and the average of those
+distances. The final return value is that final average of distances.
 
 * *words_to_summarize_path* File name or path to TXT file containing the
 list of words to summarize. Use one word per line. Blank lines are ignored.
@@ -34,9 +36,13 @@ Ex: python summarizer.py test_word_list.txt HowellNounDistances.csv y
 
 h2. Usage (many_input_files.bash)
 
+@bash many_input_files.bash input_file_list dist_csv out_file@
+
 Runs summarizer.py on many lists of words to summarize.
 
-bash many_input_files.bash input_file_list dist_csv out_file
+Simple bash snippet that demonstrates how to run summarizer.py with many
+input files (many files each with a list of words to summarize) while using
+the same distance matrix CSV. See README.texttile first.
 
 * *input_file_list* The TXT file with one file per line that should be used as
 the list of words to summarize for summarizer.py. Should be file name or path.
