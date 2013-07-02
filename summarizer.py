@@ -92,6 +92,18 @@ def load_words_to_summarize(loc):
     return filter(lambda x: x != '', words)
 
 
+def find_combiantions_and_distances(distance_finder, words):
+    # Find distances for all combinations
+    word_combinations = list(itertools.combinations(words, 2))
+    word_distances = map(distance_finder.find_distance_list, word_combinations)
+
+    return (word_combinations, word_distances)
+
+
+def arithmetic_mean(target):
+    return sum(target) / float(len(target))
+
+
 def run_cli():
     """Run the command line interface driver for this program.
 
@@ -118,18 +130,15 @@ def run_cli():
     words = load_words_to_summarize(words_loc)
     distance_finder = load_distances_csv(distances_csv_loc)
 
-    # Find distances for all combinations
-    word_combinations = list(itertools.combinations(words, 2))
-    word_distances = map(distance_finder.find_distance_list, word_combinations)
+    word_combinations, word_distances = find_combiantions_and_distances(
+        distance_finder, words)
 
     # Display individual pairs
     if display_pairs:
         for (pair, distance) in zip(word_combinations, word_distances):
             print "%s: %s" % (pair, distance)
 
-    # Calculate and return average
-    average_distance = sum(word_distances) / len(word_combinations)
-    return average_distance
+    return arithmetic_mean(word_distances)
 
 
 if __name__ == '__main__':

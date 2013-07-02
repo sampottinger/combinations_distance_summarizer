@@ -18,10 +18,6 @@ h2. Usage (summarizer.py)
 
 Utility to find the combinations of words and return the average distance.
 
-This is a utility program to find the combinations of words in a single list,
-the distances between those combination pairs, and the average of those
-distances. The final return value is that final average of distances.
-
 * *words_to_summarize_path* File name or path to TXT file containing the
 list of words to summarize. Use one word per line. Blank lines are ignored.
 Words are case sensitive and must match the distances CSV exactly.
@@ -67,4 +63,7 @@ All Python documentation is written in epydoc (http://epydoc.sourceforge.net/).
 
 h2. Testing
 
-The utility is currently small enough that automated testing is not provided.
+@python test_summarizer.py@
+
+A small set of automated unit tests are provided using the standard unittest
+library.
